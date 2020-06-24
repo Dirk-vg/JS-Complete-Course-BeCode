@@ -9,12 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  let target = document.getElementById("target");
+  let slider = document.getElementById("slider");
 
-    // your code here
-    let slider = document.getElementById('slider');
-    let target = document.getElementById('target');
-    slider.addEventListener('mouseup',()=>{
-        target.innerHTML = `0${slider.value}`;
-    })
+  slider.addEventListener('input', function(){
+    target.innerHTML=`0${slider.value}`;
+  });
+ 
 })();
